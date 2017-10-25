@@ -1,0 +1,6 @@
+- ストレージ関連のプロジェクトはデータを残すためCopyではなくVoluemを使う
+
+- django + nginx
+  - https://qiita.com/melos/items/91dc3b45a589ea5a369b
+  - http://www.sejuku.net/blog/
+

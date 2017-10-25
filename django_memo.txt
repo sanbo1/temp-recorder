@@ -1,0 +1,18 @@
+1. install django
+
+pip3 install django
+
+
+2. make project
+
+django-admin startproject my_pj
+
+
+3. make apps
+
+python3 manage.py startapp my_apps
+
+
+4. test
+
+python3 manage.py runserver
