@@ -23,6 +23,10 @@ WORKDIR /run/nginx
 #CMD ["nginx", "-g", "daemon off;"]
 #CMD ["uwsgi", "--http :22222", "--module manager.wsgi"]
 #CMD ["uwsgi", "--socket :22222", "--module manager.wsgi"]
-CMD ["uwsgi", "--ini uwsgi.ini", "--socket :22222"]
+#CMD ["uwsgi", "--socket 22222", "--module manager.wsgi"]
+#CMD ["uwsgi", "--ini uwsgi.ini", "--socket :22222"]
+#CMD ["bash", "-c", "\"uwsgi --socket :22222 --module manager.wsgi\""]
+#CMD ["/bin/bash", "-c", "\/usr/local/bin/uwsgi --socket :22222 --module manager.wsgi\""]
+CMD bash -c "/usr/local/bin/uwsgi --socket :22222 --module manager.wsgi"
 
 
